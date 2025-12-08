@@ -1,4 +1,4 @@
-# PL_Ruby_Final_Project
+# Burger Inventory Management System
 
 ## THIS IS FOR EDUCATIONAL PURPOSE ONLY
 
