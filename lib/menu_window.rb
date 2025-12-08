@@ -24,6 +24,15 @@ class MenuWindow
       pack(pady: 24)
     end
 
+    # Image (75x75)
+    original_image = TkPhotoImage.new(file: "photos/burger_icon.png")
+    image = TkPhotoImage.new(width: 100, height: 100)
+    image.copy(original_image, subsample: 2)
+    TkLabel.new(@root) do
+      image image
+      pack(pady: 4)
+    end
+
     # Button Frame
     button_frame = TkFrame.new(@root)
     button_frame.pack(pady: 10)
