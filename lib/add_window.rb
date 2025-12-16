@@ -41,8 +41,9 @@ class AddWindow
     TkLabel.new(add_window) do
       text "Ingredient Name:"
       font 'Helvetica 12 bold'
+      width 37
       anchor :w
-      pack(fill: :x, padx: 20, pady: [5, 0])
+      pack(padx: 20, pady: [5, 0])
     end
 
     name_entry = TkEntry.new(add_window) do
@@ -55,8 +56,9 @@ class AddWindow
     TkLabel.new(add_window) do
       text "Quantity:"
       font 'Helvetica 12 bold'
+      width 37
       anchor :w
-      pack(fill: :x, padx: 20, pady: [5, 0])
+      pack(padx: 20, pady: [5, 0])
     end
 
     quantity_entry = TkEntry.new(add_window) do
@@ -69,8 +71,9 @@ class AddWindow
     TkLabel.new(add_window) do
       text "Price per Unit (₱):"
       font 'Helvetica 12 bold'
+      width 37
       anchor :w
-      pack(fill: :x, padx: 20, pady: [5, 0])
+      pack(padx: 20, pady: [5, 0])
     end
 
     price_entry = TkEntry.new(add_window) do

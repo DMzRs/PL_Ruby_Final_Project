@@ -11,7 +11,6 @@ root = TkRoot.new do
   resizable false, false
 end
 
-# Center the root window on the screen
 screen_w = root.winfo_screenwidth.to_i
 screen_h = root.winfo_screenheight.to_i
 pos_x = (screen_w - width) / 2

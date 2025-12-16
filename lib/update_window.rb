@@ -42,8 +42,9 @@ class UpdateWindow
     TkLabel.new(update_window) do
       text "Select Ingredient:"
       font 'Helvetica 14 bold'
-      anchor :w
-      pack(fill: :x, padx: 20, pady: [5, 0])
+      width 37
+      anchor :center
+      pack(padx: 20, pady: [5, 0])
     end
 
     # Capture instance vars into locals so Tk blocks keep the correct references
@@ -63,8 +64,9 @@ class UpdateWindow
     TkLabel.new(update_window) do
       text "Ingredient Name:"
       font 'Helvetica 12 bold'
+      width 37
       anchor :w
-      pack(fill: :x, padx: 20, pady: [5, 0])
+      pack(padx: 20, pady: [5, 0])
     end
 
     name_entry = TkEntry.new(update_window) do
@@ -77,8 +79,9 @@ class UpdateWindow
     TkLabel.new(update_window) do
       text "Quantity:"
       font 'Helvetica 12 bold'
+      width 37
       anchor :w
-      pack(fill: :x, padx: 20, pady: [5, 0])
+      pack(padx: 20, pady: [5, 0])
     end
 
     quantity_entry = TkEntry.new(update_window) do
@@ -91,8 +94,9 @@ class UpdateWindow
     TkLabel.new(update_window) do
       text "Price per Unit (₱):"
       font 'Helvetica 12 bold'
+      width 37
       anchor :w
-      pack(fill: :x, padx: 20, pady: [5, 0])
+      pack(padx: 20, pady: [5, 0])
     end
 
     price_entry = TkEntry.new(update_window) do
