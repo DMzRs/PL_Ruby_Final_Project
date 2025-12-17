@@ -47,7 +47,7 @@ class UpdateWindow
       pack(padx: 20, pady: [5, 0])
     end
 
-    # Capture instance vars into locals so Tk blocks keep the correct references
+    # Get ingredients and callback objects
     ingredients = @ingredients
     callback = @callback
 
@@ -60,7 +60,7 @@ class UpdateWindow
       pack(padx: 20, pady: [0, 15])
     end
 
-    # Name Label and Entry
+    # Ingredient Name
     TkLabel.new(update_window) do
       text "Ingredient Name:"
       font 'Helvetica 12 bold'
@@ -75,7 +75,7 @@ class UpdateWindow
       pack(padx: 20, pady: [0, 10])
     end
 
-    # Quantity Label and Entry
+    # Quantity
     TkLabel.new(update_window) do
       text "Quantity:"
       font 'Helvetica 12 bold'
@@ -90,7 +90,7 @@ class UpdateWindow
       pack(padx: 20, pady: [0, 10])
     end
 
-    # Price Label and Entry
+    # Price
     TkLabel.new(update_window) do
       text "Price per Unit (₱):"
       font 'Helvetica 12 bold'
@@ -119,11 +119,10 @@ class UpdateWindow
       end
     end
 
-    # Button Frame
     button_frame = TkFrame.new(update_window)
     button_frame.pack(pady: 10)
 
-    # Update Button
+    # Update Function
     TkButton.new(button_frame) do
       text "Update"
       width 14

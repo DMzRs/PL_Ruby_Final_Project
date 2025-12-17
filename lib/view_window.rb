@@ -15,7 +15,6 @@ class ViewWindow
     view_window.title "View All Ingredients"
     view_window.resizable true, true
 
-    # center view window on screen
     width = 900
     height = 500
     screen_w = @root.winfo_screenwidth.to_i
@@ -41,7 +40,7 @@ class ViewWindow
       return
     end
 
-    # Create frame for scrollbar and listbox
+    # scrollbar and listbox
     list_frame = TkFrame.new(view_window)
     list_frame.pack(fill: :both, expand: true, padx: 10, pady: 10)
 
